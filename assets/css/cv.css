@@ -1,3 +1,6 @@
+/* modele du cv : 
+https://www.cvgenie.fr/wp-content/uploads/2020/01/modele-de-cv-moderne-avec-photo.jpg */
+
 * {
 	padding: 0;
 	margin: 0;
@@ -8,13 +11,18 @@ header {
 	display: flex;
 	color: aliceblue;
     padding-bottom: 1em;
+    align-items: center;
 }
 
-header section h1, header section p{
-    align-items: center;
-    align-content: center;
-    display: flex;
-    flex-direction: column;
+header section {
+    margin-left: 10vw;
+    font-size: 18px;
+}
+
+h1{
+    font-size: 48px;
+    margin-bottom: 1em;
+    text-transform: uppercase;
 }
 
 img{
@@ -22,4 +30,5 @@ img{
 	margin-top: 5vh;
 	margin-left: 10vw;
     width: 15vw;
+    border: 1px solid lightblue;
 }
