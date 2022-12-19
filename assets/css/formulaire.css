@@ -1,0 +1,67 @@
+* {
+	/* permet de retirer le margin et le padding par défaut du navigateur */
+	padding: 0;
+	margin: 0;
+}
+
+/*
+vh => % de la hauteur du viewport (écran)
+vw => % de la largeur du viewport (écran)
+em => par rapport à la taille de la police (si police de 16 px alors 1 em = 16px)
+ré indentation automatique => shift + alt + f
+*/
+
+body {
+	border: 1px solid red;
+	margin: 5vh 10vw;
+	padding: 1em;
+}
+
+button {
+	padding: 1em;
+	background-color: rgba(17, 1, 83, 0.683);
+	color: aliceblue;
+	border: 0.1em solid white;
+	border-radius: 1em;
+}
+
+label {
+	/* margin-right: 5vw; */
+	display: inline-block;
+	width: 20vw;
+    text-align: end;
+    padding-right: 1em;
+}
+
+form{
+
+    background-color: lightgray;
+}
+
+.form p {
+	padding: 2vh;
+}
+
+/* permet de selectionner le 1er enfant de la liste  */
+.form p:first-child {
+	color: green;
+}
+
+/* permet de selectionner le n ème enfant de la liste  */
+.form p:nth-child(2) {
+	color: red;
+}
+
+.form p:nth-child(3) {
+    display: flex;
+	align-items: center;
+}
+
+/* permet de selectionner le dernier enfant de la liste  */
+.form p:last-child {
+	text-align: center;
+}
+
+input, textarea{
+    width: 50vw;
+}

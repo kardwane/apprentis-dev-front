@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="./assets/css/formulaire.css">
+</head>
+<body>
+    <form class="form">
+        <p>
+            <label for="email">Email</label>
+            <input type="email" required placeholder="Votre email" id="mail">
+        </p>
+        <p>
+            <label for="titre">Titre</label>
+            <input type="text" required placeholder="Titre du message" id="titre">
+        </p>
+        <p>
+            <label for="message">Message</label>
+            <textarea rows="3" cols="20" maxlength="200" placeholder="limiter a 200 caractères et 3 lignes de 20 caractères affiché" required></textarea>
+        </p>
+        <p><button type="submit">Envoyer</button></p>
+    </form>
+</body>
+</html>
