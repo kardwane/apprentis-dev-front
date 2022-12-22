@@ -1,0 +1,11 @@
+$nameBgColor: rgba(56, 235, 15, 0.7);
+$bodyBgColor: rgb(125, 150, 175);
+$coordBgColor: rgba(250, 128, 114, 0.7);
+
+$h1FontSize: 2em;
+$h2FontSize: 1.5em;
+
+@mixin htitle {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    text-decoration: underline;
+}
