@@ -1,91 +1,107 @@
 // use custom mixin & variable
-@use 'import' as i;
+@use "import" as i;
 
 //police roboto
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
 //reset default margin/padding
 * {
-  padding: 0;
-  margin: 0;
+	padding: 0;
+	margin: 0;
 }
 
 // general
-h1{
-  font-size: i.$h1FontSize;
+h1 {
+	font-size: i.$h1FontSize;
 }
 
-h2{
-  font-size: i.$h2FontSize;
+h2 {
+	font-size: i.$h2FontSize;
 }
 
-ul, ol{
-  list-style: url('./../img/kisspng-clapperboard-film-cinema-image-clip-art-d-amp-apos-la-cabeza-estudios-amp-quot-realizaci-5b6e005ba35775.8441956715339357076691.jpg');
+li {
+  margin: 0;
+	padding: 1em;
+	// padding: 36px 0 36px 84px;
+	list-style: none;
+	background-image: url("./../img/kisspng-clapperboard-film-cinema-image-clip-art-d-amp-apos-la-cabeza-estudios-amp-quot-realizaci-5b6e005ba35775.8441956715339357076691.jpg");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 40px;
 }
 
 // DOM stucture
 body {
-  background-color: i.$bodyBgColor;
-  font-family: 'Roboto', sans-serif;
+	background-color: i.$bodyBgColor;
+	font-family: "Roboto", sans-serif;
 
-  .container {
-    margin: 0 5vw;
-    #name {
-      margin-top: 0.5em;
-      display: flex;
-      background-color: i.$nameBgColor;
-      padding: 1em;
-      border-radius: 1em;
-      
-      img {
-        width: 15vw;
-        border-radius: 50%;
-        &:hover{
-          scale: 1.2;
-        }
-      }
-      div {
-        @include i.htitle();
-        align-self: center;
-        margin: 0 auto;
-      }
-    }
-    #info {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 1em;
-      #coordonees {
-        padding: 0.5em;
-        width: 25vw;
-        text-align: center;
-        background-color: i.$coordBgColor;
-        border-radius: 1em;
-        @include i.htitle();
-        h2{
-          margin: 1em auto;
-        }
-        p, li{
-          font-size: 13px;
-          font-family: 'Roboto', sans-serif;
-          text-decoration: none;
-        }
-      }
-      #formation {
-        width: 60vw;
-        text-align: center;
-        background-color: rgba(150, 10, 70, 0.7);
-        border-radius: 1em;
-        h2{
-          font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-          text-decoration: underline;
-          margin: 1em auto;
-        }
-        p{
-          font-size: 13px;
-          font-family: 'Roboto', sans-serif;
-          text-decoration: none;
-        }
-      }
-    }
+	.container {
+		margin: 0 5vw;
+		#name {
+			margin-top: 0.5em;
+			display: flex;
+			background-color: i.$nameBgColor;
+			padding: 1em;
+			border-radius: 1em;
+
+			img {
+				width: 15vw;
+				border-radius: 50%;
+				&:hover {
+					scale: 1.2;
+				}
+			}
+			div {
+				@include i.htitle();
+				align-self: center;
+				margin: 0 auto;
+			}
+		}
+		#info {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 1em;
+			#coordonees {
+				padding: 0.5em;
+				width: 25vw;
+				text-align: center;
+				background-color: i.$coordBgColor;
+				border-radius: 1em;
+				@include i.htitle();
+				h2 {
+					margin: 1em auto;
+				}
+				p,
+				li {
+					font-size: 13px;
+					font-family: "Roboto", sans-serif;
+					text-decoration: none;
+				}
+			}
+			#formation {
+				width: 65vw;
+        margin-left: 1em;
+        padding: 1em;
+				text-align: center;
+				background-color: rgba(150, 10, 70, 0.7);
+				border-radius: 1em;
+				h2 {
+					font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
+						sans-serif;
+					text-decoration: underline;
+					margin: 1em auto;
+				}
+				p {
+					font-size: 13px;
+					font-family: "Roboto", sans-serif;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+  footer{
+    width: 100%;
+    text-align: center;
+    margin-top: 2vh
   }
 }
